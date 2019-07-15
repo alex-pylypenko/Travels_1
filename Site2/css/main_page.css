@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Mountains+of+Christmas&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+
+.article {
+    float: left;
+    margin-bottom: 2%;
+    border: 1px solid silver;
+    background-color: #b8f5ff;
+    box-sizing: border-box;
+    max-width: 350px;
+    border-radius: 5px;
+}
+
+.article>img {
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+}
+
+.article>span {
+    font-size: 1.3em;
+    width: 90%;
+    margin: 7px 5%;
+    float: left;
+    color: #232429;
+}
+
+#news>a>.btn, #subscribe>#sub_to_project>a>.btn {
+    font-size: 1.7em;
+    font-family: 'Rochester', cursive;
+    float: left;
+    margin-left: 30%;
+}
+
+
+/* Адаптация */
+
+
+@media (min-width: 1050px) {
+    .article {
+        width: 40%;
+        margin-right: 10%; 
+} 
+}
+
+@media (max-width: 1049px) and (min-width: 850px){
+    .article {
+        width: 45%;
+        margin-right: 5%; 
+}
+}
+
+@media (max-width: 849px) and (min-width: 650px){
+    .article {
+        width: 45%;
+        margin-right: 5%; 
+}
+}
+
+@media (max-width: 649px){
+    .article {
+        width: 95%;
+        margin-right: 5%; 
+}
+}
+
+/* Bottom part */
+
+
+#subscribe {
+        float: left;
+        text-align: center;
+        margin-bottom: 2%;
+}
+
+@media (min-width: 850px) {
+    #subscribe {
+        width: 90%;
+        margin-left: 10%;
+    }
+    
+    #sub_to_project {
+        width: 25%;
+    }
+}
+
+@media (max-width: 849px) {
+    #subscribe {
+        width: 100%;
+    }
+    
+    #sub_to_project {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+#subscribe>span {
+    font-size: 2em;
+    color: #0022ff;
+    font-family: 'Gloria Hallelujah', cursive;
+    margin-left: -5%;
+}
+
+#subscribe>iframe {
+    
+    margin-right: 5%;
+    float: left;
+}
+
+#sub_to_project {
+    float: left;
+    margin-bottom: 2%;
+    margin-left: 10%;
+}
+
+#subscribe>#sub_to_project>p {
+    text-align: left;
+}
+
+#sub_to_project>p {
+    width: 100%;
+    color: #292a2e;
+    font-size: 1.2em;
+}
+
+#sub_to_project>a>.btn {
+    background-color: #fffd8a;
+    border-bottom-color: #82fff5;
+}
+
+#web_sites {
+    width: 98%;
+    border-top: 2px dashed silver;
+    position: relative;
+    padding: 1%;
+    background-color: #ffffa8;
+    text-align: center;
+    min-height: 150px;
+}
+
+#web_sites>span {
+    color: #302f30;
+    font-size: 2.5em;
+}
+
+#web_sites>a>.btn {                     /* Расположение кнопки точно по центру */
+    position: absolute;
+    margin: 0;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -80%);
+    font-size: 2em;
+}
+
+
+
+
+
+

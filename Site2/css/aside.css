@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Mountains+of+Christmas&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+
+#main {
+    float: left;
+    margin-top: 1.5%;
+}
+
+aside {
+    float: left;
+    margin-top: 1.5%;
+}
+
+#courses {
+    float: left;
+    width: 90%;
+}
+
+.course {
+    width: 100%;
+    margin-bottom: 1%;
+    float: left;
+    font-family: 'Bitter', serif;
+    font-size: 1.2em;
+    color: #380173;
+}
+.course>img {
+    border: 2px solid #a1cdff;
+    border-radius: 5px;
+    width: 35%;
+    float: left;
+    margin-right: 1%;
+}
+
+.course>span {
+    float: right;
+    font-weight: bold;
+    color: #ff3700;
+}
+
+#one_course {
+    float: left;
+    margin-top: 3%;
+    
+}
+
+#one_course>img {
+    width: 80%;
+    float: left;
+}
+
+.heading {
+    font-weight: lighter;
+    font-size: 1.4em;
+    font-family: 'Bitter', serif;
+    border-bottom: 2px solid #61daff;
+    color: blue;
+    float: left;
+    padding: 0px 5px;
+}
+.heading:first-letter {
+    color: red;
+}
+
+#news {
+    float: left;
+}
+
+/* Адаптация */
+
+
+@media (min-width: 1050px) {
+    #main {
+        width: 60%;
+        margin-left: 3%;
+}
+
+    aside {
+        width: 30%;
+        margin-left: 2%;
+}
+    
+    #news {
+        margin-left: 10%;
+        width: 90%;
+}   
+}
+
+@media (max-width: 1049px) and (min-width: 850px){
+    #main {
+        width: 65%;
+        margin-left: 2%;
+}
+
+    aside {
+        width: 33%;
+}
+    
+    #news {
+        margin-left: 4%;
+        width: 96%;
+}
+}
+
+@media (max-width: 849px) and (min-width: 650px){
+    #main {
+        width: 90%;
+        margin-left: 5%;
+}
+
+    aside {
+        width: 90%;
+        margin-left: 5%;
+}
+    
+    #news {
+        margin-left: 4%;
+        width: 96%;
+}
+}
+
+@media (max-width: 649px){
+    #main {
+        width: 90%;
+        margin-left: 5%;
+}
+
+    aside {
+        width: 90%;
+        margin-left: 5%;
+}
+    
+    #news {
+        width: 96%;
+        margin-left: 4%;
+}
+}
+
+#courses>a>.btn {
+    font-size: 1.7em;
+    font-family: 'Rochester', cursive;
+    float: left;
+    margin-left: 30%;
+}
+
+.block {
+    background-color: azure;
+    width: 88%;
+    padding: 3%;
+    border-radius: 5px;
+    border: 1px solid silver;
+    font-size: 1.1em;
+    color: #171517;
+    float: left;
+}

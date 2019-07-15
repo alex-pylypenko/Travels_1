@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Mountains+of+Christmas&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rochester&display=swap');
+
+/* 
+font-family: 'Rochester', cursive;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    background-color: #f5f9ff;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#content {
+    flex: 1 0 auto;
+}
+
+a {
+    color: #d342ff;
+    text-decoration: none;
+    -webkit-transition: all.6s ease; /* ссылки меняют цвет плавно*/ /* Safari*/
+    -moz-transition: all.6s ease; /* для Мозилы */
+    -o-transition: all.6s ease; /* для оперы*/
+    -ms-transition: all.6s ease; /* для IE*/
+    transition: all.6s ease;
+}
+
+a:hover {
+    color: crimson;
+    text-decoration: none;
+    -webkit-transition: all.6s ease;
+    -moz-transition: all.6s ease''
+    -o-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    transition: all.6s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+     -webkit-transition: all.3s ease;
+    -moz-transition: all.3s ease;
+    -o-transition: all.3s ease;
+    -ms-transition: all.3s ease;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #7d7d7d;
+    margin: 1em;
+    padding: 0;
+}
+
+header {
+    float: left;
+    background-color: #96efff;
+    width: 99.4%;
+    padding: 0.3%;
+    border-bottom: 5px solid #57fcff;  
+}
+
+header>div#logo>a>img {
+    width: 10em;
+    float: left;
+}
+
+header>div#logo>a>span {
+    font-size: 2.5em;
+    margin-left: 1%;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+#first {
+    color: red;
+}
+
+#second {
+    color: #0037ff;
+}
+
+#third {
+    color: yellow;
+}
+
+#fourth {
+    color: violet;
+}
+
+#fifth {
+    color: orange;
+}
+
+#sixth {
+    color: navy;
+}
+
+#seventh {
+    color: green;
+}
+
+@media(min-width: 950px){
+    
+    header>div#logo>a>img {
+        margin-left: 15%;
+    }
+    
+    #logo {
+        float: left;
+        width: 30%;    
+    }
+    
+    header>div#logo>a>span {
+        float: left;
+        margin: 2% 0 0 10%;
+    }
+
+    #about {
+        float: left;
+        width: 37%;
+        margin-top: 0.8%;
+    }
+
+    #reg_auth {
+        float: right;
+        width: 30%;
+        margin-top: 1.8%;
+    }
+}
+
+@media(max-width: 949px) and (min-width: 550px){
+    
+    header>div#logo>a>img {
+        margin-left: 15%;
+    }
+    
+    #logo {
+        float: left;
+        width: 50%;
+    }
+
+    #about {
+        visibility: hidden;
+        display: none;
+    }
+
+    #reg_auth {
+        float: right;
+        width: 50%;
+    }
+}
+
+@media(max-width: 549px){
+    
+    header>div#logo>a>img {
+        margin-left: 5%;
+    }
+    
+    #logo {
+        width: 100%;
+    }
+
+    #about {
+        visibility: hidden;
+        display: none;
+    }
+
+    #reg_auth {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+#about {
+    text-align: center;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 2em;
+    padding-top: 1%;
+}
+
+#about>a {
+    color: #d342ff;
+}
+
+#about>a:hover {
+    color: crimson;
+    border-bottom: 1px solid crimson;
+}
+
+#about>a:last-child {
+    margin-left: 20%;
+}
+
+#reg_auth>a {
+    color: blue;
+}
+
+.btn:hover {
+    border-bottom: 2px solid #b5c3ff;
+    margin-top: 12px;
+}
+
+.btn:active {
+    margin-top: 14px;
+    border-bottom: 0;
+}
+
+.btn {
+    float: right;
+    margin-right: 3%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 0.5% 1%;
+    font-size: 1.2em;
+    background-color: white;
+    text-shadow: red 0 0 2px;
+    border-bottom: 4px solid #b5c3ff;
+    color: blue;
+}
+
+nav {
+    background-color: white;
+    width: 99.4%;
+    padding: 0.7% 0.3%;
+    float: left;
+    border-bottom: 2px solid silver;
+}
+
+#showMenu {
+    display: inline;
+    float: left;
+    width: 30px;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+#hideMenu {
+    display: inline; /* все в одну линию */
+    width: 90%;
+    float: left;
+    text-align: center;
+}
+
+nav a {
+    float: left;
+    color: #e028af;
+    font-size: 1.5em;
+    margin-left: 5%;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #3db5ff;
+}
+
+nav a:last-child {
+    margin-right: 15px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
+#search {
+    float: right;
+    color: #808487;
+    cursor: pointer;
+    font-size: 1.4em;
+    margin-right: 2.5%;
+}
+
+#search>img {
+    float: right;
+    width: 20px;
+    margin-top: 3px;
+}
+
+#mobileMenu {
+    display: none;
+    width: 100%;
+    float: left;
+}
+
+@media (min-width: 785px) {
+    #showMenu {
+        display: none;
+        visibility: hidden;
+}}
+
+@media (max-width: 784px) {
+    #hideMenu {
+        display: none;
+        visibility: hidden;
+}}
+
+footer {
+    float: left;
+    background-color: #96efff;
+    width: 98.8%;
+    padding: 0.6%;
+    border-top: 5px solid #57fcff;
+}
+
+@media (min-width: 600px) {
+    #site_name {
+        width: 26.3%;
+        font-family: 'Gloria Hallelujah', cursive;
+        color: #f06b00;
+        font-size: 1.8em;
+        float: left;
+        margin-left: 7%;
+}}
+
+@media (max-width: 599px) {
+    #site_name {
+        display: none;
+}}
+
+@media (max-width: 1080px) {
+    #clear {
+        clear: both;
+}}
+
+#footer_menu {
+    width: 33.4%;
+    float: left;
+    text-align: center;
+}
+
+#footer_menu>a {
+    font-size: 1.2em;
+    margin:0 8% 0 8%;
+}
+
+#footer_menu>a:hover, #rights>a:hover {
+    color: blue;
+}
+
+#rights {
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 1.5%;
+}
+
+@media (min-width: 600px) {
+    #social {
+        float: left;
+        width: 31.3%;
+        margin-right: 2%;
+}}
+
+@media (max-width: 599px) {
+    #social {
+        float: left;
+        width: 33.3%;
+}}
+
+#social>a>img {
+    margin-left: 5%;
+    width: 35px;
+    float: right;
+}
+
+#social>a:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+

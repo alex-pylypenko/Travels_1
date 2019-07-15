@@ -1,0 +1,51 @@
+form {
+    float: left;
+    width: 100%;
+    margin-top: 1%;
+}
+
+form>div {
+    float: left;
+    width: 50%;
+}
+
+form>div>input {
+    border-radius: 5px;
+    border: 1px solid #f200ff;
+    font-size: 0.9em;
+    padding: 2% 5%;
+    margin-bottom: 2%;
+    background-color: white;
+    width: 60%;
+}
+
+form>div>input:focus, form textarea:focus {
+    border: 1px solid #ff8800;
+}
+
+form textarea {
+    border-radius: 5px;
+    border: 1px solid #f200ff;
+    font-size: 0.9em;
+    padding: 2%;
+    margin-bottom: 2%;
+    background-color: white;
+    width: 80%;
+    resize: none;
+    min-height: 200px;
+}
+
+form .btn {
+    border: 0;
+    border-bottom: 4px solid orange;
+    background-color: #bfcedb;
+    cursor: pointer;
+}
+
+form .btn:hover {
+    border-bottom: 2px solid #0084ff;
+}
+
+form .btn:active {
+    border-bottom: 0px;
+}
